@@ -6,7 +6,7 @@ const User = require("../models/User");
 // testing a route
 
 router.get("/",(req, res) => {
-  res.send("welcome to Posts route")
+  console.log("This is a post route")
 });
 
 

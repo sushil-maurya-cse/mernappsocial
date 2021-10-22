@@ -41,7 +41,7 @@ router.put("/:id", async (req, res) => {
 });
 
 router.get("/",(req, res) => {
-   res.send("welcome to user route")
+   console.log("this is a user route")
 });
 
 //delete user
