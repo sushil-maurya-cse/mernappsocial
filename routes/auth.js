@@ -24,6 +24,11 @@ router.post("/register", async (req, res) => {
   }
 });
 
+
+router.get("/",(req, res) => {
+  console.log("This is a auths route")
+});
+
 //LOGIN
 router.post("/login", async (req, res) => {
   try {
