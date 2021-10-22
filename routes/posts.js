@@ -2,6 +2,16 @@ const router = require("express").Router();
 const Post = require("../models/Post");
 const User = require("../models/User");
 
+
+// testing a route
+
+router.get("/",(req, res) => {
+  res.send("welcome to Posts route")
+});
+
+
+
+
 //create a post
 
 router.post("/", async (req, res) => {
