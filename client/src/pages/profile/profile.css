@@ -1,0 +1,115 @@
+.profile{
+    display: flex;
+}
+
+.profileRight{
+    flex: 9;
+}
+
+.profileCover{
+    height: 320px;
+    position: relative;
+}
+
+.profileCoverImg{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.profileUserImg{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 150px;
+    border: 3px solid white;
+}
+
+.profileInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileInfoName{
+    font-size: 24px;
+}
+
+.profileInfoDesc{
+    font-weight: 300;
+}
+
+.profileRightBottom{
+    display: flex;
+}
+
+form.shareBottom {
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+}
+.prof {
+    z-index: 2;
+    margin-left: 393px;
+    /* color: palevioletred; */
+}
+img.editme{
+  width: 25px;
+}
+
+.pencilICon {
+    position: relative;
+    left: -99px;
+    top: -7px;
+    border: 1px solid #4c4848;
+    background: #272626;
+    color: white;
+    padding: 2px;
+}
+
+.shareOption {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+
+span.shareOptionText.text {
+    color: white;
+    background: black;
+    padding: 6px;
+    border-radius: 16px;
+    margin-left: 84px;
+}
+button.shareButton.editbutton {
+    position: absolute;
+    float: right;
+    right: 36px;
+}
+span.shareOptionText.cover {
+    width: 50px;
+    position: absolute;
+    right: 31px;
+    top: 205px;
+     color: white;
+    background: black;
+    padding: 6px;
+    border-radius: 16px;
+}
+
+img.edit {
+    width: 25px;
+}
+.profileInfoName {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 20px;
+}
