@@ -51,9 +51,6 @@ app.post("/api/upload", upload.single("file"), (req, res) => {
   }
 });
 
-app.get("/",(req,res)=>{
-  res.send("this is my main port working")
-})
 
 app.post("/posing", async (req, res) => {
   console.log(req.body.username)
