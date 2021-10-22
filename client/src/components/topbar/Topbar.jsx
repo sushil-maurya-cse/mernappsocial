@@ -23,7 +23,7 @@ export default function Topbar() {
           <nav class=" flex-col flex-grow hidden my-3 pb-8 md:pb-0 md:flex md:justify-end md:flex-row ">
             <div>
               <Link to={`/profile/${user.username}`} className="profilebanner transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
-              <img class ="avatarImage" src={user.profilePicture?PF +user.profilePicture: PF + "person/noAvatar.png"} />
+              <img class ="avatarImage" src={user.profilePicture?PF +user.profilePicture:   "/images/person/noAvatar.png"} />
                <p className="text-sm font-semibold px-4">{user.username} </p>
             </Link>
             </div>
