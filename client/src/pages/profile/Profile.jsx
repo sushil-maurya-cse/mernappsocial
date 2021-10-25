@@ -62,11 +62,11 @@ export default function Profile() {
       profilePic.coverPicture = coverName;
 
       try {
-        await axios.post("/upload", data);
+        await axios.post("/api/upload", data);
       } catch (err) { }
     }
     try {
-      await axios.put("/users/" + user._id, profilePic).then((res) => {
+      await axios.put("/api/users/" + user._id, profilePic).then((res) => {
         var user = JSON.parse(localStorage.getItem("user"));
         console.log(Object.keys(user).length)
         for (var key in user) {
