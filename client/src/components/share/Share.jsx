@@ -15,6 +15,7 @@ export default function Share() {
   const { user } = useContext(AuthContext);
   const username = useParams().username;
   const PF = "/images/";
+  console.log("PF", PF)
   const desc = useRef();
   const [file, setFile] = useState(null);
   // const [profUSer, setProfUser] = useState({})
