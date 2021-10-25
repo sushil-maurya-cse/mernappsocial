@@ -10,18 +10,18 @@ import { AuthContext } from "../../context/AuthContext";
 
 export default function Profile() {
 
-  const PF = "/images/"
+  const PF = "/images/";
   const [user, setUser] = useState({});
   const username = useParams().username;
   const [profile, setproFile] = useState(null);
   const [cover, setCover] = useState(null)
   const { user: currentUser } = useContext(AuthContext);
-  console.log("currentUsser" ,currentUser)
-  console.log(JSON.parse(localStorage.getItem("user")))
+  console.log(currentUser)
+
 
   useEffect(() => {
     const fetchUser = async () => {
-      const res = await axios.get(`/api/users?username=${username}`);
+      const res = await axios.get(`/users?username=${username}`);
       setUser(res.data);
     };
     fetchUser();
@@ -31,7 +31,7 @@ export default function Profile() {
     e.preventDefault();
     const profilePic = {
       userId: currentUser._id,
-      
+
     };
     if (profile) {
       const data = new FormData();
