@@ -21,7 +21,7 @@ export default function Profile() {
 
   useEffect(() => {
     const fetchUser = async () => {
-      const res = await axios.get(`/users?username=${username}`);
+      const res = await axios.get(`/api/users?username=${username}`);
       setUser(res.data);
     };
     fetchUser();
@@ -46,7 +46,7 @@ export default function Profile() {
       profilePic.profilePicture = profileName;
 
       try {
-        await axios.post("/upload", data);
+        await axios.post("/api/upload", data);
       } catch (err) { }
     }
     if (cover) {
