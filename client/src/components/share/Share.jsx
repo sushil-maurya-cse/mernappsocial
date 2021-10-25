@@ -18,15 +18,6 @@ export default function Share() {
   console.log("PF", PF)
   const desc = useRef();
   const [file, setFile] = useState(null);
-  // const [profUSer, setProfUser] = useState({})
-
-  // useEffect(() => {
-  //   const fetchUser = async () => {
-  //     const res = await axios.get(`/users?username=${username}`);
-  //     setProfUser(res.data);
-  //   };
-  //   fetchUser();
-  // }, true)
 
   const submitHandler = async (e) => {
     e.preventDefault();
@@ -60,12 +51,13 @@ export default function Share() {
     <div className="share">
       <div className="shareWrapper">
         <div className="shareTop">
+          {console.log(PF + user.profilePicture)}
           <img
             className="shareProfileImg"
             src={
               user.profilePicture
                 ? PF + user.profilePicture
-                : PF + "person/noAvatar.png"
+                : "/images/person/noAvatar.png"
             }
             alt=""
           />

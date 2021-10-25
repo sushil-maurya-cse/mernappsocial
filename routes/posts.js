@@ -5,9 +5,6 @@ const User = require("../models/User");
 
 // testing a route
 
-router.get("/",(req, res) => {
-  console.log("This is a post route")
-});
 
 
 

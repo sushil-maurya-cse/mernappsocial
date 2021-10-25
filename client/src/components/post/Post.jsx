@@ -13,7 +13,7 @@ export default function Post({ post }) {
   const [text,setCommenttext]=useState('');
   const [isLiked, setIsLiked] = useState(false);
   const [user, setUser] = useState({});
-  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+  const PF = "/images/";
   const { user: currentUser } = useContext(AuthContext);
 
   
