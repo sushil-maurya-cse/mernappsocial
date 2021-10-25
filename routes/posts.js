@@ -3,12 +3,6 @@ const Post = require("../models/Post");
 const User = require("../models/User");
 
 
-// testing a route
-
-
-
-
-
 //create a post
 
 router.post("/", async (req, res) => {

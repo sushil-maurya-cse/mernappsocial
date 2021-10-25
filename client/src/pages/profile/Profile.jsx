@@ -16,7 +16,7 @@ export default function Profile() {
   const [profile, setproFile] = useState(null);
   const [cover, setCover] = useState(null)
   const { user: currentUser } = useContext(AuthContext);
-  console.log(currentUser)
+  console.log("currentUsser" ,currentUser)
   console.log(JSON.parse(localStorage.getItem("user")))
 
   useEffect(() => {
@@ -31,7 +31,7 @@ export default function Profile() {
     e.preventDefault();
     const profilePic = {
       userId: currentUser._id,
-
+      
     };
     if (profile) {
       const data = new FormData();

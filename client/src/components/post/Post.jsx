@@ -15,6 +15,7 @@ export default function Post({ post }) {
   const [user, setUser] = useState({});
   const PF = "/images/";
   const { user: currentUser } = useContext(AuthContext);
+  console.log("PostJSx",currentUser)
 
   
 
