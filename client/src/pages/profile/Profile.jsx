@@ -150,7 +150,8 @@ export default function Profile() {
                     onChange={(e) => setCover(e.target.files[0])}
 
                   />
-                  
+                  {/* {console.log("hjguyfwejkf")}
+                    {console.log(file.name)} */}
                 </label>
                 <div className="shareOptions">
                   <label htmlFor="profile" className="shareOption">
