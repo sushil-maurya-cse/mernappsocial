@@ -65,6 +65,11 @@ const path = require("path");
 }
  */
 
+app.use("/api/auth", authRoute);
+app.use("/api/users", userRoute);
+app.use("/api/posts", postRoute);
+
+
 if (process.env.NODE_ENV === 'production') {
   // Serve any static files
   app.use(express.static(path.join(__dirname, 'client/build')));
@@ -77,9 +82,7 @@ if (process.env.NODE_ENV === 'production') {
       });
 }
 
-app.use("/api/auth", authRoute);
-app.use("/api/users", userRoute);
-app.use("/api/posts", postRoute);
+
 
 app.listen(port, () => {
   console.log("Server listening on Port", port);
