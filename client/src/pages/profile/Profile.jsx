@@ -10,7 +10,7 @@ import { AuthContext } from "../../context/AuthContext";
 
 export default function Profile() {
 
-  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+  const PF = "/images/"
   const [user, setUser] = useState({});
   const username = useParams().username;
   const [profile, setproFile] = useState(null);

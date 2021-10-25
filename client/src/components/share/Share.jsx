@@ -14,7 +14,7 @@ import { useParams } from "react-router";
 export default function Share() {
   const { user } = useContext(AuthContext);
   const username = useParams().username;
-  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+  const PF = "/images/";
   const desc = useRef();
   const [file, setFile] = useState(null);
   // const [profUSer, setProfUser] = useState({})
