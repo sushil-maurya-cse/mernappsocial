@@ -72,12 +72,9 @@ if (process.env.NODE_ENV === 'production') {
     
   // Handle React routing, return all requests to React app
   app.get('*', function(req, res) {
-    if("/api/posts/"){
-       // do nothing .. 
-    }
-    else{
+  
       res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
-    }  });
+      });
 }
 
 app.use("/api/auth", authRoute);
