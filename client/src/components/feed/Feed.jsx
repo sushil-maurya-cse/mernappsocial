@@ -5,10 +5,12 @@ import "./feed.css";
 import axios from "axios";
 import { AuthContext } from "../../context/AuthContext";
 
+
 export default function Feed({ username }) {
   const [posts, setPosts] = useState([]);
   const { user } = useContext(AuthContext);
-
+  const PF = "/images/";
+  console.log("PF", PF);
   useEffect(() => {
     const fetchPosts = async () => {
       const res = username
