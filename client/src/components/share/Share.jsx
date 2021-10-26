@@ -43,7 +43,7 @@ export default function Share() {
     }
     try {
       await axios.post("/api/posts", newPost).then((response)=>{console.log("/api/posts/",response)});
-      window.location.reload();
+      //  window.location.reload();
     } catch (err) { }
   };
 
