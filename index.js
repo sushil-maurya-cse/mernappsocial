@@ -42,6 +42,11 @@ const storage = multer.diskStorage({
   },
 });
 
+app.use(function(req, res, next) {
+  res.setHeader("content-security-policy-report-only", "default-src 'none'; script-src 'self' 'unsafe-inline' 'report-sample'; style-src 'unsafe-inline' http://localhost:3000 https://fonts.googleapis.com https://unpkg.com; font-src 'self' https://fonts.gstatic.com;   'report-sample'; base-uri 'none'; object-src 'none'; img-src 'self' blob:https://mernappsocial.herokuapp.com  report-uri https://5e52f4c893efcda6a7d40460.endpoint.csper.io")
+  next();
+});
+
 const upload = multer({ storage: storage });
 app.post("/api/upload", upload.single("file"), (req, res) => {
   try {
